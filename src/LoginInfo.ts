@@ -1,4 +1,4 @@
-import { VercelRequest, VercelResponse } from '@vercel/node';
+import { VercelResponse } from '@vercel/node';
 import { sql } from '@vercel/postgres';
 
 export default async function handler(_req: any, res: VercelResponse) {
