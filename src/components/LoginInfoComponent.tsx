@@ -10,7 +10,7 @@ const LoginInfoComponent: React.FC = () => {
   const [loginInfo, setLoginInfo] = useState<UserInfo[]>([]);
 
   useEffect(() => {
-    fetch('/api/loginInfo')
+    fetch('/src/loginInfo')
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch login info');
@@ -31,9 +31,9 @@ const LoginInfoComponent: React.FC = () => {
       <table>
         <thead>
           <tr>
-            <th>User ID</th>
-            <th>Username</th>
-            <th>Email</th>
+            <th>User ID  </th>
+            <th>Username   </th>
+            <th>Email   </th>
           </tr>
         </thead>
         <tbody>

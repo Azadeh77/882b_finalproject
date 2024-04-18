@@ -6,6 +6,7 @@ export default async function handler(res: VercelResponse) {
     // Execute SQL query to retrieve data from login_info table
     const result = await sql`SELECT * FROM login_info`;
     const loginInfo = result.rows;
+    console.log('Login info:', loginInfo);
 
     // Send JSON response with the retrieved data
     res.status(200).json(loginInfo);
