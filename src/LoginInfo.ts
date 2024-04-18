@@ -1,7 +1,7 @@
 import { VercelResponse } from '@vercel/node';
 import { sql } from '@vercel/postgres';
 
-export default async function handler(res: VercelResponse) { // Removed the req parameter
+export default async function handler(res: VercelResponse) {
   try {
     // Execute SQL query to retrieve data from login_info table
     const result = await sql`SELECT * FROM login_info`;
