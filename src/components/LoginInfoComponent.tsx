@@ -10,7 +10,7 @@ const LoginInfoComponent: React.FC = () => {
   const [loginInfo, setLoginInfo] = useState<UserInfo[]>([]);
 
   useEffect(() => {
-    fetch('/src/loginInfo')
+    fetch('../loginInfo')
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch login info');
